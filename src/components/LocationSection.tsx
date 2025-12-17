@@ -26,14 +26,14 @@ export default function LocationSection() {
       {isInView && (
         <>
           <NeonBeerBottle 
-            className="hide-mobile"
+            className="mobile-top-left"
             color="#ffd700"
             size={95}
             delay={0.4}
             style={{ top: '8%', left: '2%' }}
           />
           <NeonCocktailGlass 
-            className="hide-mobile"
+            className="mobile-bottom-right"
             color="#00bfff"
             size={85}
             delay={0.7}

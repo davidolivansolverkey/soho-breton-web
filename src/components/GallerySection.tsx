@@ -26,14 +26,14 @@ export default function GallerySection() {
       {isInView && (
         <>
           <NeonWineGlass 
-            className="hide-mobile"
+            className="mobile-top-right"
             color="#E1306C"
             size={80}
             delay={0.5}
             style={{ top: '12%', right: '3%' }}
           />
           <NeonMusicNote 
-            className="hide-mobile"
+            className="mobile-bottom-left"
             color="#833AB4"
             size={70}
             delay={0.8}

@@ -26,14 +26,14 @@ export default function MusicSection() {
       {isInView && (
         <>
           <NeonHeadphones 
-            className="hide-mobile"
+            className="mobile-top-left"
             color="#00bfff"
             size={100}
             delay={0.4}
             style={{ top: '8%', left: '2%' }}
           />
           <NeonDiscoBall 
-            className="hide-mobile"
+            className="mobile-bottom-right"
             color="#ffd700"
             size={90}
             delay={0.7}

@@ -53,14 +53,14 @@ export default function AboutSection() {
       {isInView && (
         <>
           <NeonVinyl 
-            className="hide-mobile"
+            className="mobile-top-right"
             color="#9b59b6"
             size={120}
             delay={0.5}
             style={{ top: '10%', right: '3%' }}
           />
           <NeonCocktailGlass 
-            className="hide-mobile"
+            className="mobile-bottom-left"
             color="#ff0080"
             size={85}
             delay={0.8}
