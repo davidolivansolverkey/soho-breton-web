@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SOHO ★ Logroño - Landing Page
 
-## Getting Started
+Landing page para SOHO, el pub de referencia del tardeo en Logroño con inspiración del Soho londinense.
 
-First, run the development server:
+## 🌟 Características
+
+- **Diseño Neón**: Efectos de luz neón con colores rosa y azul característicos
+- **Animaciones Fluidas**: Transiciones y animaciones con Framer Motion
+- **Estética Graffiti**: Elementos visuales inspirados en el arte urbano
+- **Responsive**: Diseño adaptado para móviles, tablets y desktop
+- **Tema Oscuro**: Ambiente nocturno que refleja la esencia del local
+
+## 🛠️ Tecnologías
+
+- **Next.js 16** - Framework de React
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos utility-first
+- **Framer Motion** - Animaciones fluidas
+
+## 🚀 Instalación
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
+
+# Iniciar servidor de producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Estructura
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── globals.css     # Estilos globales y efectos neón
+│   ├── layout.tsx      # Layout principal
+│   └── page.tsx        # Página principal
+├── components/
+│   ├── Navigation.tsx      # Barra de navegación
+│   ├── HeroSection.tsx     # Sección principal con logo
+│   ├── AboutSection.tsx    # Sobre nosotros
+│   ├── GallerySection.tsx  # Galería de fotos
+│   ├── MusicSection.tsx    # Sección de música
+│   ├── LocationSection.tsx # Ubicación y horarios
+│   ├── Footer.tsx          # Pie de página
+│   └── LoadingScreen.tsx   # Pantalla de carga
+└── public/
+    └── images/         # Imágenes del pub
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🖼️ Imágenes
 
-## Learn More
+Para añadir imágenes reales del pub:
 
-To learn more about Next.js, take a look at the following resources:
+1. Coloca las imágenes en `public/images/`
+2. Las imágenes de la galería se nombran: `gallery-1.jpg`, `gallery-2.jpg`, etc.
+3. Reemplaza los placeholders en `GallerySection.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Efectos de imagen recomendados:
+- Fotos en blanco y negro con overlays de color
+- Graffiti o trazos superpuestos
+- Filtros que mantengan la estética neón
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Colores del Tema
 
-## Deploy on Vercel
+```css
+--neon-pink: #ff0080;
+--neon-blue: #00bfff;
+--neon-yellow: #ffd700;
+--neon-purple: #9b59b6;
+--background: #0a0a0a;
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📍 Información del Local
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**SOHO Logroño**
+- 📍 Bretón de los Herreros 28, Logroño
+- 🕐 Jueves a Martes (Miércoles cerrado)
+- 🎵 Música 80s, 90s y actual
+- ☀️ Tardeo con terraza
+
+## 📱 Redes Sociales
+
+- Instagram: @soholobreton
+- Facebook: /soholobreton
+
+---
+
+Desarrollado con ❤️ para SOHO Logroño
