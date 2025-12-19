@@ -2499,4 +2499,64 @@ body {
   }
 }
 
+/* ===== EMBEDSOCIAL WIDGET CUSTOMIZATION ===== */
+.embedsocial-hashtag {
+  /* Asegurar que el widget se adapte al contenedor */
+  width: 100%;
+}
+
+/* Texto del encabezado del widget en blanco */
+.embedsocial-hashtag .es-header-text,
+.embedsocial-hashtag .es-header-title,
+.embedsocial-hashtag .es-header-subtitle,
+.embedsocial-hashtag .es-header h1,
+.embedsocial-hashtag .es-header h2,
+.embedsocial-hashtag .es-header h3,
+.embedsocial-hashtag .es-header p,
+.embedsocial-hashtag .es-header span,
+.embedsocial-hashtag [class*="header"] span,
+.embedsocial-hashtag [class*="title"],
+.embedsocial-hashtag [class*="subtitle"],
+.embedsocial-hashtag [class*="posts"],
+.embedsocial-hashtag .es-widget-header *,
+.es-header-text,
+.es-header-title,
+.es-header-subtitle {
+  color: #ffffff !important;
+}
+
+/* Fondo del encabezado transparente para que se mezcle */
+.embedsocial-hashtag .es-header,
+.embedsocial-hashtag .es-widget-header,
+.embedsocial-hashtag [class*="header-wrap"] {
+  background: transparent !important;
+}
+
+/* Botón Follow us con estilo neón */
+.embedsocial-hashtag .es-follow-btn,
+.embedsocial-hashtag [class*="follow"] {
+  background: linear-gradient(135deg, #E1306C, #833AB4) !important;
+  border: none !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  transition: all 0.3s ease !important;
+}
+
+.embedsocial-hashtag .es-follow-btn:hover,
+.embedsocial-hashtag [class*="follow"]:hover {
+  box-shadow: 0 0 20px rgba(225, 48, 108, 0.5) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Ocultar o estilizar el branding de EmbedSocial */
+.es-widget-branding,
+.feed-powered-by-es {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.es-widget-branding:hover,
+.feed-powered-by-es:hover {
+  opacity: 1;
+}
 
