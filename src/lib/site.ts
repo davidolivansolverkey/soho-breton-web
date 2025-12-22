@@ -27,7 +27,12 @@ export function getSiteUrl() {
   const withProtocol =
     raw && !raw.startsWith("http") ? `https://${raw}` : raw;
 
-  return (withProtocol || "http://localhost:3000").replace(/\/+$/, "");
+  const fallback =
+    process.env.NODE_ENV === "production"
+      ? "https://sohobreton.es"
+      : "http://localhost:3000";
+
+  return (withProtocol || fallback).replace(/\/+$/, "");
 }
 
 export function absoluteUrl(pathname: string) {

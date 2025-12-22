@@ -13,19 +13,13 @@ import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    setIsMounted(true);
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
-
-  if (!isMounted) {
-    return null;
-  }
 
   if (isLoading) {
     return <LoadingScreen />;

@@ -6,7 +6,10 @@ import Link from "next/link";
 export default function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [showFloatingButton, setShowFloatingButton] = useState(false);
+  const [showFloatingButton, setShowFloatingButton] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return Boolean(localStorage.getItem("cookieConsent"));
+  });
 
   useEffect(() => {
     const cookieConsent = localStorage.getItem("cookieConsent");
@@ -16,8 +19,6 @@ export default function CookieBanner() {
         setTimeout(() => setIsAnimating(true), 50);
       }, 1500);
       return () => clearTimeout(timer);
-    } else {
-      setShowFloatingButton(true);
     }
   }, []);
 
