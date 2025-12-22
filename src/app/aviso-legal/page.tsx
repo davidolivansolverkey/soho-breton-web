@@ -1,8 +1,16 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { SITE } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Aviso Legal",
+  description: `Información legal y términos de uso de ${SITE.name} Logroño.`,
+  alternates: {
+    canonical: "/aviso-legal",
+  },
+};
 
 export default function AvisoLegal() {
   return (

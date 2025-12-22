@@ -175,7 +175,7 @@ export default function AboutSection() {
                 lineHeight: 1,
               }}
             >
-              "
+              &quot;
             </span>
             
             {/* Comilla derecha grande */}
@@ -187,7 +187,7 @@ export default function AboutSection() {
                 lineHeight: 1,
               }}
             >
-              "
+              &quot;
             </span>
             
             <p className="text-xl md:text-2xl font-light italic text-white/80 leading-relaxed text-center px-8">
