@@ -1,8 +1,16 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { SITE } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Política de Privacidad",
+  description: `Política de privacidad y protección de datos personales en ${SITE.name} Logroño.`,
+  alternates: {
+    canonical: "/politica-privacidad",
+  },
+};
 
 export default function PoliticaPrivacidad() {
   return (

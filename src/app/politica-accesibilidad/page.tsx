@@ -1,8 +1,16 @@
-"use client";
-
+import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { SITE } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Política de Accesibilidad",
+  description: `Compromiso de accesibilidad web de ${SITE.name} Logroño.`,
+  alternates: {
+    canonical: "/politica-accesibilidad",
+  },
+};
 
 export default function PoliticaAccesibilidad() {
   return (
